@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giphy searcher</title>
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+<body>
+  <header class="header">
+    <h1>Giphy Searcher</h1>
+    <div class="search-container">
+      <input type="search" id="searchBar" placeholder="search all the gifs and sticker">
+      <button id="searchBtn">
+        SEARCH
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="filters-container">
+      <div class="info">
+          <h4 class="searched-value">Trending</h4>
+          <span class="searched-results"></span>
+      </div>
+      <div class="filter">
+        <button class="filter-btn active" value="gifs">Gifs</button>
+        <button class="filter-btn" value="stickers">Stickers</button>
+      </div>
+    </section>
+
+    <section class="item-list-container">
+    </section>
+
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>      
+    </div>
+  </main>
+  <script src="src/main.js"></script>
+</body>
+</html>
